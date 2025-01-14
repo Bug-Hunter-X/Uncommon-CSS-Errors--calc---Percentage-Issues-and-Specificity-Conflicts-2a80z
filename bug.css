@@ -1,0 +1,3 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, there's a potential issue if you try to use `calc()` with percentages that depend on the parent element's dimensions, particularly when the parent element's dimensions haven't been established yet. This can lead to unexpected or incorrect results. For example, if you use `width: calc(50% - 10px);`, and the parent's width isn't yet resolved, the calculation might be off.
+
+Another uncommon issue is related to specificity in CSS. If you have conflicting styles with equal specificity, the order matters. The last declared style takes precedence, which is sometimes not what was intended. This can be a tricky problem to debug.
