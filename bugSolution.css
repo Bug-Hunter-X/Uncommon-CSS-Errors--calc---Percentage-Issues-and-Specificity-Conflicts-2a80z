@@ -1,0 +1,7 @@
+To address the `calc()` issue, ensure that the parent element's dimensions are fully determined before relying on percentage-based calculations within `calc()`. You can achieve this by setting explicit dimensions on the parent or using appropriate layout techniques that guarantee dimension resolution.
+
+For specificity conflicts, refactor your CSS to clearly establish a higher specificity for the intended style. Methods include:
+
+*   **Increasing Specificity:** Add more specific selectors to target the element in question (e.g., using class selectors along with element selectors).
+*   **CSS Preprocessor (like Sass or Less):** Utilize features in CSS preprocessors to manage and resolve style conflicts more effectively.
+*   **Re-order Styles:** Consider rearranging styles (though less desirable, it's important to understand the order's influence). In `bugSolution.css`, the order of the styles is adjusted to resolve the specificity conflict.
